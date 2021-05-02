@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+
+    <body>
+        <div style="text-align: center;">
+            <h1>My Family</h1>
+            <img style="width: 300px; height: 300px;" src="myFamily.png" id="image">
+            <p id="text">My Family</p>
+            <button onclick="change()">Next</button>
+        </div>
+    </body>
+
+    <script>
+        var images = ["https://img.pngio.com/happy-family-cartoon-png-clipart-of-my-family-free-png-images-family-clipart-png-920_733.png", "https://i.pinimg.com/originals/d5/6c/d2/d56cd25436d0d3f56ad2f143750f7455.png", "https://www.clipartmax.com/png/middle/18-188588_grandmother-clip-art.png", "https://cdn.imgbin.com/14/14/4/imgbin-father-others-Cx0QP3BX1Q2LapVsFx6E0FuYA.jpg", "https://www.pngitem.com/pimgs/m/284-2841491_mother-clipart-png-transparent-png.png", "https://i.dlpng.com/static/png/1665770-tim-templeton-boss-babypng-boss-baby-png-2000_2673_preview.png"];
+        var texts = ["My Family", "Grand Father", "Grand Mother", "Father", "Mother", "Brother"];
+        var counter = 1;
+        function change(){
+            
+            if(counter == 6){
+                counter = 0;
+            }
+            document.getElementById("image").src = images[counter];
+            document.getElementById("text").innerHTML = texts[counter];
+            counter++;
+        }
+
+    </script>
+</html>
